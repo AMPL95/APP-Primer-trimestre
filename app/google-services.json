@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "248500379740",
+    "project_id": "prueba-4b143",
+    "storage_bucket": "prueba-4b143.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248500379740:android:b738ecdaeb3cad62890699",
+        "android_client_info": {
+          "package_name": "com.example.holaandroidstudio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248500379740-j0b7gu9f0egkm6v4tsslg2ukfn8qecpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-U_vvoxcwsL4nG3-rX570FsM3MJOFUKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248500379740-j0b7gu9f0egkm6v4tsslg2ukfn8qecpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

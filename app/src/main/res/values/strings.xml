@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">app Angel</string>
+    <string name="preferences">com.example.holaandroidstudio.PREFERENCE_KEY</string>
+    <string name="client_id">248500379740-j0b7gu9f0egkm6v4tsslg2ukfn8qecpt.apps.googleusercontent.com</string>
+    <string name="contacto">añade un contacto nuevo</string>
+    <string name="title_activity_navegador">Navegador</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_contactos">Contactos</string>
+
+    <string name="enlace"><a href="https://tutorial.eyehunts.com/android/how-to-make-links-in-textview-clickable-hyperlink-android-kotlin-java/">He leído y acepto las condiciones de uso  </a>
+    </string>
+    <string name="no_ha_llegado_el_codigo_reenviar">No ha llegado el codigo? <b>reenviar</b></string>
+</resources>

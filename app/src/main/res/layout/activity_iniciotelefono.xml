@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco_app"
+    tools:context=".iniciotelefono">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_baseline_phonelink_ring_24"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/phoneLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Acceso con número de telefono"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/TextoPrimario_app"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Introduce tu telefono para continuar"
+                android:textColor="@color/TextoPrimario_app"/>
+
+
+            <EditText
+                android:id="@+id/phoneEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="xxxxxxxxx"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/TextoPrimario_app" />
+
+            <Button
+                android:id="@+id/phoneContinueBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Enviar"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/codeLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Verificación codigo de acceso"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/TextoPrimario_app"/>
+
+            <TextView
+                android:id="@+id/codeSentDescriptionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Introduce el codigo"
+                android:textColor="@color/TextoPrimario_app"/>
+
+
+            <EditText
+                android:id="@+id/codeEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:hint="Introduce el codigo"
+                android:textColor="@color/TextoPrimario_app"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/resendCodeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:text="@string/no_ha_llegado_el_codigo_reenviar"/>
+
+            <Button
+                android:id="@+id/codeSubmitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Acceder"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

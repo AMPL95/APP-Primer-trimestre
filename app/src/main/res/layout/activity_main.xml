@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco_app"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/VistaEmail"
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/background_shape"
+            android:text="Bienvenido"
+            android:textColor="#3A4549" />
+
+        <EditText
+            android:id="@+id/emailTextId"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="50dp" />
+
+        <EditText
+            android:id="@+id/PasswordTextId"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:minHeight="50dp"
+            android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/botonRegistro"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azul_app"
+            android:onClick="irRegistro"
+            android:text="Registro"
+            android:textStyle="italic"
+            tools:ignore="OnClick" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/Acceso"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:onClick="acceder"
+            android:text="Login"
+            android:backgroundTint="@color/azul_app"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           >
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="onClickGoogle"
+                android:background="@color/blanco_app"
+                android:src="@drawable/common_google_signin_btn_icon_light_normal"
+                tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                 />
+
+
+            <Button
+                android:id="@+id/todasBtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azul_app"
+                android:onClick="irTodas"
+                android:text="Pantallas"
+                android:textStyle="italic"
+                tools:ignore="OnClick" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:onClick="onClickTelefono"
+                android:src="@drawable/ic_baseline_phonelink_ring_24"
+                tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

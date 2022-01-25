@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/opcionPortal"
+        android:title="Ir a portal" />
+    <item
+        android:id="@+id/opcionYoutube"
+        android:title="ir a Video Youtube" />
+    <item
+        android:id="@+id/opcionCerrarSesion"
+        android:title="Cerrar Sesión" />
+</menu>
